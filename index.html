@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Basic Meta-Analysis App — Forest Plots, Funnel Plots & Meta-Regression</title>
+<meta name="description" content="A free web-based tool for pairwise meta-analysis: upload a dataset and generate forest plots, funnel plots, publication bias tests, and meta-regression without writing any code.">
+<style>
+  :root{
+    --ink:#1b2430; --ink-soft:#525c68; --bg:#f7f8fa; --card:#ffffff;
+    --accent:#2c5f8a; --line:#dfe3e8;
+    --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:var(--font);color:var(--ink);background:var(--bg);line-height:1.6;}
+  .wrap{max-width:800px;margin:0 auto;padding:0 24px;}
+  header{padding:56px 0 28px;text-align:center;}
+  header h1{font-size:2.1rem;margin:0 0 10px;}
+  header p.tagline{color:var(--ink-soft);font-size:1.15rem;max-width:60ch;margin:0 auto;}
+  section{padding:30px 0;border-top:1px solid var(--line);}
+  h2{font-size:1.3rem;margin:0 0 14px;}
+  p{margin:0 0 14px;}
+  ul{margin:0 0 14px;padding-left:20px;}
+  li{margin-bottom:8px;}
+  .launch-box{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:26px;text-align:center;}
+  .launch-box p{color:var(--ink-soft);font-size:.95rem;}
+  a.button{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;padding:14px 30px;font-size:1.05rem;border-radius:4px;}
+  a.button:hover{opacity:.9;}
+  footer{padding:26px 0 50px;color:var(--ink-soft);font-size:.9rem;}
+  footer a{color:var(--accent);}
+  code{background:#eef0f2;padding:1px 5px;border-radius:3px;font-size:.9em;}
+</style>
+</head>
+<body>
+
+<header class="wrap">
+  <h1>Basic Meta-Analysis App</h1>
+  <p class="tagline">A free, web-based tool for running pairwise meta-analyses — forest plots, funnel plots, and meta-regression, without writing any code.</p>
+</header>
+
+<section class="wrap">
+  <h2>What it does</h2>
+  <p>Upload a study-level dataset as a CSV or Excel file, and the app runs a complete pairwise meta-analysis from it. It accepts either pre-calculated effect sizes and standard errors, or raw counts (events and totals per group, including person-time for rate measures), so you don't need to compute effect sizes yourself before uploading.</p>
+</section>
+
+<section class="wrap">
+  <h2>Key features</h2>
+  <ul>
+    <li><strong>Flexible input formats</strong> — works from summary effect sizes (with standard errors) or from raw event/total counts by treatment and control group.</li>
+    <li><strong>Fixed effect, random effects, or both</strong> — compare pooling methods side by side.</li>
+    <li><strong>Choice of between-study variance estimators</strong> — including Restricted Maximum-Likelihood — and confidence-interval methods for the random-effects estimate.</li>
+    <li><strong>Forest plots</strong> — overall and broken out by subgroup.</li>
+    <li><strong>Funnel plots and a formal test for asymmetry</strong> — to assess publication bias (the symmetry test requires at least 10 studies).</li>
+    <li><strong>Meta-regression</strong> — explore how a single covariate relates to the pooled effect.</li>
+    <li><strong>Multiple effect measures</strong> — including risk ratio, with support for other common binary, continuous, and rate-based measures.</li>
+  </ul>
+</section>
+
+<section class="wrap">
+  <h2>Who it's for</h2>
+  <p>Systematic reviewers, epidemiologists, and clinical researchers who need a standard pairwise meta-analysis — forest plot, heterogeneity, publication-bias check — without writing R or Stata code themselves.</p>
+</section>
+
+<section class="wrap">
+  <div class="launch-box">
+    <h2 style="margin-top:0;">Launch the app</h2>
+    <p>Opens the live tool at kabali.shinyapps.io. Free apps on this platform can take a few seconds to wake up on first load.</p>
+    <a class="button" href="https://kabali.shinyapps.io/meta-analysis/" target="_blank" rel="noopener">Open Basic Meta-Analysis App</a>
+  </div>
+</section>
+
+<footer class="wrap">
+  <p>Developed by Conrad Kabali. Cite as: Kabali C. Basic Meta-Analysis App [Internet]. Available from: <a href="https://kabali.shinyapps.io/meta-analysis/">https://kabali.shinyapps.io/meta-analysis/</a>.</p>
+  <p>Questions: <a href="mailto:conrad.kabali@utoronto.ca">conrad.kabali@utoronto.ca</a></p>
+</footer>
+
+</body>
+</html>
