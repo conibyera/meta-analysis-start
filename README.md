@@ -1,0 +1,1 @@
+This is a free, web-based tool for running pairwise meta-analyses — forest plots, funnel plots, and meta-regression, without writing any code. Accessible at https://conibyera.github.io/meta-analysis-start/
